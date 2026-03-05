@@ -38,12 +38,16 @@ public class TodoController {
         if (title == null || title.trim().isEmpty()) {
             return ResponseEntity.badRequest().build();
         }
-        Todo created = todoService.create(title.trim());
+        String trimmed = title.trim();
+        if (trimmed.length() > 255) {
+            return ResponseEntity.badRequest().build();
+        }
+        Todo created = todoService.create(trimmed);
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Todo> update(@PathVariable Long id, @RequestBody Map<String, Object> body) {
+    public ResponseEntity<Todo> update(@PathVariable Long id, @RequestBody(required = false) Map<String, Object> body) {
         if (body == null) {
             return todoService.findById(id)
                     .map(ResponseEntity::ok)
