@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.todo.adversarial.TodoApiAdversarialTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.236 s <<< FAILURE! -- in com.todo.adversarial.TodoApiAdversarialTest
+com.todo.adversarial.TodoApiAdversarialTest.createWithVeryLongTitleHandlesGracefully -- Time elapsed: 0.011 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Very long title should not cause 500: 500 INTERNAL_SERVER_ERROR ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.todo.adversarial.TodoApiAdversarialTest.createWithVeryLongTitleHandlesGracefully(TodoApiAdversarialTest.java:164)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.todo.adversarial.TodoApiAdversarialTest.updateWithNullBodyReturns200WithUnchangedTodo -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Null body update should return 200 with unchanged todo: 400 BAD_REQUEST ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.todo.adversarial.TodoApiAdversarialTest.updateWithNullBodyReturns200WithUnchangedTodo(TodoApiAdversarialTest.java:335)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
