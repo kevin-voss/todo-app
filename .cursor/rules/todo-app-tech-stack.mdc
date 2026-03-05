@@ -1,0 +1,24 @@
+---
+description: "Todo app tech stack: React, Spring Boot, H2"
+alwaysApply: true
+globs: []
+---
+# Todo App Tech Stack
+
+This project is a minimal todo app with:
+
+- **Frontend:** `frontend/` — React 18, Vite 5, TypeScript, Vitest
+- **Backend:** `backend/` — Java 17, Spring Boot 3.2, Maven, JPA
+- **Database:** H2 (configured via `spring.datasource.url`)
+
+## Key Paths
+
+- `frontend/src/components/TodoList.tsx` — main UI component
+- `frontend/src/api/todos.ts` — API client (getTodos, createTodo, updateTodo, deleteTodo)
+- `backend/src/main/java/com/todo/` — entity, repository, service, controller
+- `backend/src/main/resources/application.properties` — H2 and Spring config
+
+## Verification
+
+- `cd frontend && npm run test` — frontend tests
+- `cd backend && ./mvnw test` — backend tests (includes H2 config, API acceptance)
