@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { getTodos, createTodo, updateTodo, deleteTodo } from '../api/todos';
+import { getTodos, createTodo } from '../api/todos';
+import { TodoItem } from './TodoItem';
 import type { Todo } from '../types/todo';
 
 export function TodoList() {
@@ -28,44 +29,11 @@ export function TodoList() {
     const title = newTitle.trim();
     if (!title) return;
     try {
-      const created = await createTodo(title);
-      setTodos((prev) => [...prev, created]);
+      await createTodo(title);
       setNewTitle('');
+      await loadTodos();
     } catch {
       setError('Failed to create');
-    }
-  };
-
-  const handleToggle = async (todo: Todo) => {
-    try {
-      const updated = await updateTodo(todo.id, { completed: !todo.completed });
-      setTodos((prev) =>
-        prev.map((t) => (t.id === todo.id ? updated : t))
-      );
-    } catch {
-      setError('Failed to update');
-    }
-  };
-
-  const handleDelete = async (id: number) => {
-    try {
-      await deleteTodo(id);
-      setTodos((prev) => prev.filter((t) => t.id !== id));
-    } catch {
-      setError('Failed to delete');
-    }
-  };
-
-  const handleTitleChange = async (todo: Todo, title: string) => {
-    const trimmed = title.trim();
-    if (!trimmed || trimmed === todo.title) return;
-    try {
-      const updated = await updateTodo(todo.id, { title: trimmed });
-      setTodos((prev) =>
-        prev.map((t) => (t.id === todo.id ? updated : t))
-      );
-    } catch {
-      setError('Failed to update');
     }
   };
 
@@ -90,28 +58,16 @@ export function TodoList() {
       {loading ? (
         <p>Loading...</p>
       ) : isEmpty ? (
-        <p>No todos. Add one to get started.</p>
+        <p>No todos yet. Add one above.</p>
       ) : (
         <ul role="list">
           {todos.map((todo) => (
-            <li key={todo.id} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem' }}>
-              <input
-                type="checkbox"
-                checked={todo.completed}
-                onChange={() => handleToggle(todo)}
-                aria-label={`Mark "${todo.title}" as ${todo.completed ? 'incomplete' : 'complete'}`}
-              />
-              <input
-                type="text"
-                value={todo.title}
-                onChange={(e) => handleTitleChange(todo, e.target.value)}
-                onBlur={(e) => handleTitleChange(todo, e.target.value)}
-                style={{ flex: 1 }}
-              />
-              <button type="button" onClick={() => handleDelete(todo.id)}>
-                Delete
-              </button>
-            </li>
+            <TodoItem
+              key={todo.id}
+              todo={todo}
+              onUpdate={loadTodos}
+              onDelete={loadTodos}
+            />
           ))}
         </ul>
       )}
