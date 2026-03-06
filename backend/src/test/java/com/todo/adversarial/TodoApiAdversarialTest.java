@@ -335,4 +335,90 @@ class TodoApiAdversarialTest {
         assertTrue(response.getStatusCode().is2xxSuccessful(),
                 "Null body update should return 200 with unchanged todo: " + response.getStatusCode());
     }
+
+    // --- Additional adversarial: double delete, malformed body, stress ---
+
+    @Test
+    @Order(21)
+    void doubleDeleteReturns404OnSecondCall() {
+        Map<String, String> createBody = Map.of("title", "To Delete Twice");
+        ResponseEntity<Map> createResponse = restTemplate.postForEntity(baseUrl(), createBody, Map.class);
+        Object id = createResponse.getBody().get("id");
+
+        ResponseEntity<Void> first = restTemplate.exchange(baseUrl() + "/" + id, HttpMethod.DELETE, null, Void.class);
+        assertEquals(HttpStatus.NO_CONTENT, first.getStatusCode());
+
+        ResponseEntity<String> second = restTemplate.exchange(baseUrl() + "/" + id, HttpMethod.DELETE, null, String.class);
+        assertEquals(HttpStatus.NOT_FOUND, second.getStatusCode());
+    }
+
+    @Test
+    @Order(22)
+    void postWithArrayBodyReturns400() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        HttpEntity<String> request = new HttpEntity<>("[{\"title\":\"x\"}]", headers);
+        ResponseEntity<String> response = restTemplate.postForEntity(baseUrl(), request, String.class);
+        assertTrue(response.getStatusCode().is4xxClientError(),
+                "Array body should be rejected: " + response.getStatusCode());
+    }
+
+    @Test
+    @Order(23)
+    void postWithWrongContentTypeHandlesGracefully() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.TEXT_PLAIN);
+        HttpEntity<String> request = new HttpEntity<>("title=test", headers);
+        ResponseEntity<String> response = restTemplate.postForEntity(baseUrl(), request, String.class);
+        assertTrue(response.getStatusCode().is4xxClientError() || response.getStatusCode().is5xxServerError(),
+                "Wrong Content-Type should not succeed: " + response.getStatusCode());
+    }
+
+    @Test
+    @Order(24)
+    void concurrentGetListStressDoesNotCorrupt() throws InterruptedException, ExecutionException {
+        int concurrency = 50;
+        ExecutorService executor = Executors.newFixedThreadPool(concurrency);
+        List<Future<ResponseEntity<List>>> futures = new ArrayList<>();
+
+        for (int i = 0; i < concurrency; i++) {
+            futures.add(executor.submit(() -> restTemplate.getForEntity(baseUrl(), List.class)));
+        }
+
+        for (Future<ResponseEntity<List>> f : futures) {
+            ResponseEntity<List> r = f.get();
+            assertEquals(HttpStatus.OK, r.getStatusCode());
+            assertNotNull(r.getBody());
+        }
+        executor.shutdown();
+        executor.awaitTermination(5, TimeUnit.SECONDS);
+    }
+
+    @Test
+    @Order(25)
+    void createWithWhitespaceOnlyTitleReturns400() {
+        Map<String, String> body = Map.of("title", "   ");
+        ResponseEntity<Map> response = restTemplate.postForEntity(baseUrl(), body, Map.class);
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+    }
+
+    @Test
+    @Order(26)
+    void putWithEmptyJsonObjectReturns200WithUnchangedTodo() {
+        Map<String, String> createBody = Map.of("title", "Empty Update");
+        ResponseEntity<Map> createResponse = restTemplate.postForEntity(baseUrl(), createBody, Map.class);
+        Object id = createResponse.getBody().get("id");
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        HttpEntity<String> request = new HttpEntity<>("{}", headers);
+        ResponseEntity<Map> response = restTemplate.exchange(
+                baseUrl() + "/" + id,
+                HttpMethod.PUT,
+                request,
+                Map.class
+        );
+        assertTrue(response.getStatusCode().is2xxSuccessful(),
+                "Empty JSON update should return 200: " + response.getStatusCode());
+    }
 }

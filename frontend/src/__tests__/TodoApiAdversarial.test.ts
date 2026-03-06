@@ -159,3 +159,36 @@ describe('API client - concurrent call handling', () => {
     expect(new Set([a.id, b.id, c.id]).size).toBe(3);
   });
 });
+
+describe('API client - malformed response structure', () => {
+  it('getTodos returns array when backend returns object (validation)', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve({ error: 'unexpected' }),
+    }));
+
+    const result = await getTodos();
+    expect(Array.isArray(result)).toBe(true);
+  });
+
+  it('getTodos returns array when backend returns null', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve(null),
+    }));
+
+    const result = await getTodos();
+    expect(Array.isArray(result)).toBe(true);
+  });
+
+  it('getTodos handles response with items missing required fields without crash', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
+      ok: true,
+      json: () => Promise.resolve([{ id: 1 }]),
+    }));
+
+    const result = await getTodos();
+    expect(Array.isArray(result)).toBe(true);
+    expect(result[0]).toBeDefined();
+  });
+});
