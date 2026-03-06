@@ -17,7 +17,7 @@ Minimal todo application with **React** (frontend), **Java Spring Boot** (backen
 
 ## Architecture and Conventions
 
-- **frontend/** — React + Vite + TypeScript. Vitest for tests. Components in `src/components/`, API client in `src/api/`.
+- **frontend/** — React + Vite + TypeScript. Vitest for tests. Components in `src/components/` (TodoList, TodoItem), API client in `src/api/`, types in `src/types/`.
 - **backend/** — Spring Boot 3.2, Java 17, Maven. JPA + H2. Package: `com.todo`. Layered: entity, repository, service, controller.
 - **API base path:** `/api/todos`. REST: GET (list), POST (create), PUT (update), DELETE (delete).
 - **Todo shape:** `{ id, title, completed }`. Title required, non-empty.

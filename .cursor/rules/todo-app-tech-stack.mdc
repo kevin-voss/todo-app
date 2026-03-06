@@ -14,7 +14,9 @@ This project is a minimal todo app with:
 ## Key Paths
 
 - `frontend/src/components/TodoList.tsx` — main UI component
+- `frontend/src/components/TodoItem.tsx` — todo item with toggle/delete
 - `frontend/src/api/todos.ts` — API client (getTodos, createTodo, updateTodo, deleteTodo)
+- `frontend/src/types/todo.ts` — Todo type definition
 - `backend/src/main/java/com/todo/` — entity, repository, service, controller
 - `backend/src/main/resources/application.properties` — H2 and Spring config
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.todo.acceptance.RepositoryStructureTest" time="0.001" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.todo.acceptance.SpecAcceptanceTest" time="0.096" tests="18" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -65,6 +65,32 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="repositoryContainsReactFrontendFolder" classname="com.todo.acceptance.RepositoryStructureTest" time="0.0"/>
-  <testcase name="repositoryContainsJavaSpringBootBackendFolder" classname="com.todo.acceptance.RepositoryStructureTest" time="0.001"/>
+  <testcase name="backendIsBuiltWithJavaAndSpringBoot" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.007">
+    <system-out><![CDATA[2026-03-06T15:38:23.986+01:00  INFO 35879 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.todo.acceptance.SpecAcceptanceTest]: SpecAcceptanceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-06T15:38:23.989+01:00  INFO 35879 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.todo.TodoApplication for test class com.todo.acceptance.SpecAcceptanceTest
+]]></system-out>
+  </testcase>
+  <testcase name="databaseIsH2SqlConfiguredViaSpringDatasourceUrl" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.001"/>
+  <testcase name="createTodoWithValidTitleReturns201AndCreatedObject" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.004"/>
+  <testcase name="getTodosReturnsArrayOfAllTodos" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.005"/>
+  <testcase name="putTodoWithTitleAndOrCompletedUpdatesAndReturns200" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.006"/>
+  <testcase name="deleteTodoReturns204AndRemovesFromList" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.008"/>
+  <testcase name="togglingCompletedViaPutPersistsAndReturns200" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.007"/>
+  <testcase name="h2IsConfiguredForTodoPersistence" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.001"/>
+  <testcase name="applicationIsSingleUserWithNoAuthentication" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.005"/>
+  <testcase name="apiUsesJsonOverHttp" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.004"/>
+  <testcase name="createReturns201UpdateReturns200DeleteReturns204NotFoundReturns404ValidationReturns400" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.012"/>
+  <testcase name="emptyOrWhitespaceOnlyTitleReturns400Not500" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.005"/>
+  <testcase name="getPutDeleteWithNonExistentIdReturns404" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.005"/>
+  <testcase name="createWithMissingTitleKeyOrNullTitleReturns400" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.005"/>
+  <testcase name="updateWithEmptyStringForTitleReturns400" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.003"/>
+  <testcase name="titleExceedingMaxLength255Returns400Not500" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.001"/>
+  <testcase name="invalidPathParamsNegativeIdOrNonNumericReturn4xxNot500" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.003">
+    <system-out><![CDATA[2026-03-06T15:38:24.077+01:00  WARN 35879 --- [-auto-1-exec-14] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "abc"]
+]]></system-out>
+  </testcase>
+  <testcase name="malformedJsonReturns400Not500" classname="com.todo.acceptance.SpecAcceptanceTest" time="0.002">
+    <system-out><![CDATA[2026-03-06T15:38:24.080+01:00  WARN 35879 --- [o-auto-1-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('i' (code 105)): was expecting double-quote to start field name]
+]]></system-out>
+  </testcase>
 </testsuite>

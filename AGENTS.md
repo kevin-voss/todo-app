@@ -20,5 +20,5 @@
 
 ## Commands
 
-- Frontend: `npm run dev`, `npm run test`
+- Frontend: `npm run dev`, `npm run build`, `npm run test`
 - Backend: `./mvnw spring-boot:run`, `./mvnw test`

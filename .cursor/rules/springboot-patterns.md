@@ -26,7 +26,7 @@ alwaysApply: false
 ## H2 Configuration
 
 - Use `spring.datasource.url` with `jdbc:h2:...` (file or mem)
-- `spring.jpa.hibernate.ddl-auto=update` for schema
+- `spring.jpa.hibernate.ddl-auto`: `update` for file persistence; `create-drop` for in-memory tests
 - H2 is the sole data store; no other DB
 
 ## Validation

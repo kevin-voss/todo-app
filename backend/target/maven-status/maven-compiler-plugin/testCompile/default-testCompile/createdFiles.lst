@@ -1,4 +1,5 @@
 com/todo/acceptance/TodoApiAcceptanceTest.class
 com/todo/acceptance/RepositoryStructureTest.class
+com/todo/acceptance/SpecAcceptanceTest.class
 com/todo/adversarial/TodoApiAdversarialTest.class
 com/todo/acceptance/BackendH2ConfigTest.class
