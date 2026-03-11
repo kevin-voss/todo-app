@@ -1,5 +1,13 @@
+com/todo/service/AuthService.class
+com/todo/controller/TodoController.class
+com/todo/security/SecurityConfig.class
+com/todo/repository/UserRepository.class
 com/todo/entity/Todo.class
 com/todo/service/TodoService.class
-com/todo/controller/TodoController.class
+com/todo/service/JwtService.class
 com/todo/TodoApplication.class
+com/todo/security/JwtAuthFilter.class
+com/todo/entity/User.class
+com/todo/security/UserPrincipal.class
 com/todo/repository/TodoRepository.class
+com/todo/controller/AuthController.class
