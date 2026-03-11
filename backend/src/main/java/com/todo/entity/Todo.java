@@ -20,11 +20,15 @@ public class Todo {
     @Column(name = "created_at")
     private LocalDateTime createdAt = LocalDateTime.now();
 
+    @Column(name = "user_id", nullable = false)
+    private Long userId;
+
     public Todo() {
     }
 
-    public Todo(String title) {
+    public Todo(String title, Long userId) {
         this.title = title;
+        this.userId = userId;
     }
 
     public Long getId() {
@@ -57,5 +61,13 @@ public class Todo {
 
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }
