@@ -6,36 +6,47 @@ A minimal todo application with React (frontend), Java Spring Boot (backend), an
 
 ## Profile
 
-<!-- Replace the sections below with your resume data from Lebenslauf.pdf -->
+**Aria Abbaspour**
 
 ### Summary
 
-Full-stack developer with experience building web applications using React, TypeScript, Java, and Spring Boot. Focus on clean architecture, REST APIs, and maintainable code.
+Internationales Informationsmanagement Bachelor-Absolvent mit Schwerpunkt auf Informationsmanagement, Prozessoptimierung und Datenqualität. Mehrjährige praktische Erfahrung in unterschiedlichen Arbeitsumgebungen mit ausgeprägtem Qualitätsbewusstsein und Detailgenauigkeit. Versiert im Umgang mit digitalen Systemen und Dokumentationstools. Selbstständige, lösungsorientierte Arbeitsweise mit nachweislicher Erfahrung in der Remote-Arbeit.
 
 ### Experience
 
 | Period | Role | Company | Description |
 |--------|------|---------|-------------|
-| [Dates] | [Job Title] | [Company] | [Key responsibilities and achievements] |
-| [Dates] | [Job Title] | [Company] | [Key responsibilities and achievements] |
+| Aug 2024 – Jan 2026 | Werkstudent Betriebswirtschaft & Datenanalyse | EVI Energieversorgung Hildesheim GmbH & Co. KG | Unterstützung mehrerer Fachabteilungen (Fernwärme, Energielogistik, Finanz- und Anlagenwesen, Controlling, Personalmanagement). Analyse, Aufbereitung und Pflege von Daten. Strukturierte Aufbereitung von Kennzahlen, Auswertungen und Reportings. Pflege von IT-Systemen, MS Excel. Mitwirkung bei Prozessoptimierung und abteilungsübergreifender Zusammenarbeit. |
+| Okt 2022 – Dez 2023 | Werkstudent Buchhaltung & Finanzwesen | AMEOS Krankenhausgesellschaft Niedersachsen mbH | Unterstützung der Buchhaltung im operativen Tagesgeschäft. Erfassung, Prüfung und Verbuchung von Rechnungen. Kontierung und Zuordnung von Geschäftsvorfällen. Pflege von Finanz- und Buchhaltungsdaten. Monats- und Jahresabschlussvorbereitungen. Erstellung von Übersichten und Auswertungen. Zusammenarbeit mit Verwaltung und Controlling. |
 
 ### Education
 
 | Period | Degree / Qualification | Institution |
 |--------|------------------------|-------------|
-| [Dates] | [Degree] | [University/School] |
+| Okt 2019 – Dez 2025 | Bachelor of Arts (B.A.) Internationales Informationsmanagement | Universität Hildesheim |
+| Aug 2015 – Sep 2018 | Fachhochschulreife (BWL, VWL, Wirtschaftswissenschaften) | Friedrich-List-Schule, Hildesheim |
 
 ### Skills
 
-- **Technical:** Java, Spring Boot, React, TypeScript, JavaScript, SQL, REST APIs, JPA
-- **Tools:** Maven, Vite, Git, H2, Vitest
-- **Languages:** [Spoken/written languages and proficiency]
+- **Datenanalyse & Reporting (fortgeschritten):** MS Excel (Pivot, Power Query), Power BI, SQL
+- **Controlling & Finanzwesen (fortgeschritten):** SAP FI/CO, DATEV, Lexware
+- **Prozessoptimierung (fortgeschritten):** Analyse & Weiterentwicklung interner Abläufe, SharePoint, Confluence
+- **Projekt- & abteilungsübergreifende Zusammenarbeit (sehr gut):** MS Teams, Outlook, Trello, Jira
+- **Digitale Informationssysteme & MS Office (sehr gut):** Excel, Access, SAP IS-U
+- **Kundenberatung & Servicekompetenz (sehr gut):** Beratung, Vertragsabwicklung, Kommunikation
+- **Weitere:** SEA & SEO
+
+### Languages
+
+- **Deutsch:** Muttersprache
+- **Englisch:** Fließend
 
 ### Contact
 
-- **Email:** [your.email@example.com]
-- **LinkedIn:** [linkedin.com/in/yourprofile]
-- **Location:** [City, Country]
+- **Email:** ariaabbaspour1998@gmail.com
+- **Phone:** 017666602639
+- **LinkedIn:** [Profil hinterlegen]
+- **Location:** 31134 Hildesheim, Deutschland
 
 ---
 
