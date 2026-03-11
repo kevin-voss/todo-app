@@ -14,17 +14,43 @@ Internationales Informationsmanagement Bachelor-Absolvent mit Schwerpunkt auf In
 
 ### Experience
 
-| Period | Role | Company | Description |
-|--------|------|---------|-------------|
-| Aug 2024 – Jan 2026 | Werkstudent Betriebswirtschaft & Datenanalyse | EVI Energieversorgung Hildesheim GmbH & Co. KG | Unterstützung mehrerer Fachabteilungen (Fernwärme, Energielogistik, Finanz- und Anlagenwesen, Controlling, Personalmanagement). Analyse, Aufbereitung und Pflege von Daten. Strukturierte Aufbereitung von Kennzahlen, Auswertungen und Reportings. Pflege von IT-Systemen, MS Excel. Mitwirkung bei Prozessoptimierung und abteilungsübergreifender Zusammenarbeit. |
-| Okt 2022 – Dez 2023 | Werkstudent Buchhaltung & Finanzwesen | AMEOS Krankenhausgesellschaft Niedersachsen mbH | Unterstützung der Buchhaltung im operativen Tagesgeschäft. Erfassung, Prüfung und Verbuchung von Rechnungen. Kontierung und Zuordnung von Geschäftsvorfällen. Pflege von Finanz- und Buchhaltungsdaten. Monats- und Jahresabschlussvorbereitungen. Erstellung von Übersichten und Auswertungen. Zusammenarbeit mit Verwaltung und Controlling. |
+#### Aug 2024 – Jan 2026 · Werkstudent Betriebswirtschaft & Datenanalyse  
+**EVI Energieversorgung Hildesheim GmbH & Co. KG · Hildesheim**
+
+- Unterstützung mehrerer Fachabteilungen (Fernwärme, Energielogistik, Finanz- und Anlagenwesen, Controlling, Personalmanagement) im operativen Tagesgeschäft
+- Analyse, Aufbereitung und Pflege von Daten zur Unterstützung betriebswirtschaftlicher, energiewirtschaftlicher und personalbezogener Prozesse
+- Strukturierte Aufbereitung von Kennzahlen sowie Erstellung von Auswertungen, Übersichten und Reportings
+- Pflege und Verwaltung von Informationen in internen IT-Systemen sowie sicherer Umgang mit MS Excel
+- Unterstützung bei abrechnungs-, anlagen- und personalbezogenen Tätigkeiten
+- Mitwirkung bei der Analyse, Optimierung und Weiterentwicklung interner Prozesse und Arbeitsabläufe
+- Selbstständige Übernahme von Teilaufgaben nach entsprechender Einarbeitung
+- Abteilungsübergreifende Zusammenarbeit mit verschiedenen Ansprechpartnern
+
+#### Okt 2022 – Dez 2023 · Werkstudent Buchhaltung & Finanzwesen  
+**AMEOS Krankenhausgesellschaft Niedersachsen mbH · Hildesheim**
+
+- Unterstützung der Buchhaltung im operativen Tagesgeschäft
+- Mitarbeit bei der Erfassung, Prüfung und Verbuchung von Rechnungen
+- Unterstützung bei der Kontierung und Zuordnung von Geschäftsvorfällen
+- Pflege und Aktualisierung von Finanz- und Buchhaltungsdaten in internen Systemen
+- Unterstützung bei Monats- und Jahresabschlussvorbereitungen
+- Erstellung und Aufbereitung von Übersichten, Listen und Auswertungen
+- Bearbeitung administrativer Aufgaben im Finanzwesen
+- Zusammenarbeit mit internen Ansprechpartnern aus Verwaltung und Controlling
 
 ### Education
 
-| Period | Degree / Qualification | Institution |
-|--------|------------------------|-------------|
-| Okt 2019 – Dez 2025 | Bachelor of Arts (B.A.) Internationales Informationsmanagement | Universität Hildesheim |
-| Aug 2015 – Sep 2018 | Fachhochschulreife (BWL, VWL, Wirtschaftswissenschaften) | Friedrich-List-Schule, Hildesheim |
+#### Okt 2019 – Dez 2025 · Bachelor of Arts (B.A.) Internationales Informationsmanagement  
+**Universität Hildesheim · Hildesheim**
+
+- Interdisziplinäres Studium mit Schwerpunkt auf Betriebswirtschaft, Informations- und Datenmanagement
+- Vermittlung von Datenanalyse, Controlling und Prozessoptimierung
+- Erfahrung im Umgang mit digitalen Informationssystemen und Tools
+- Schulung in interkultureller Kommunikation und internationaler Zusammenarbeit
+- Vorbereitung auf die Unterstützung informationsbasierter Entscheidungsprozesse in Unternehmen
+
+#### Aug 2015 – Sep 2018 · Fachhochschulreife (BWL, VWL, Wirtschaftswissenschaften)  
+**Friedrich-List-Schule · Hildesheim**
 
 ### Skills
 
