@@ -10,7 +10,7 @@ A minimal todo application with React (frontend), Java Spring Boot (backend), an
 
 ### Summary
 
-[Your professional summary — 2–3 sentences about your background, expertise, and career focus.]
+Full-stack developer with experience building web applications using React, TypeScript, Java, and Spring Boot. Focus on clean architecture, REST APIs, and maintainable code.
 
 ### Experience
 
@@ -27,8 +27,8 @@ A minimal todo application with React (frontend), Java Spring Boot (backend), an
 
 ### Skills
 
-- **Technical:** [List your technical skills, e.g. Java, React, TypeScript, Spring Boot, SQL]
-- **Tools:** [List tools and platforms]
+- **Technical:** Java, Spring Boot, React, TypeScript, JavaScript, SQL, REST APIs, JPA
+- **Tools:** Maven, Vite, Git, H2, Vitest
 - **Languages:** [Spoken/written languages and proficiency]
 
 ### Contact
