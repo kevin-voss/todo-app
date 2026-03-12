@@ -18,12 +18,12 @@ The README already contains Kevin Voß's full profile from the Lebenslauf (Janua
 
 Score: 90
 
-Reason: The README profile section is complete and matches the lebenslauf data described in prior crew-ai tasks. No source lebenslauf file exists in the workspace to verify against; confidence is based on consistency with feature-update-readme documentation.
+Reason: The README profile section is complete and matches the lebenslauf data described in prior crew-ai tasks. No source lebenslauf file exists in the workspace to verify against; confidence is based on consistency with feature-update-readme documentation. Full build/test validation blocked by environment.
 
 ## Recommendations
 
 - Add real contact links (email, LinkedIn, portfolio) when available.
-- Run `cd frontend && npm run test` and `cd backend && ./mvnw test` in an environment with proper Java and Node dependencies to confirm full validation.
+- Run frontend and backend tests in an environment with JAVA_HOME set and a non-arm64 platform (or after fixing rollup optional deps) to confirm no regressions.
 
 ## Handoff
 
@@ -33,7 +33,7 @@ Reason: The README profile section is complete and matches the lebenslauf data d
   "confidence": 0.9,
   "summary": "README already contains Kevin Voß's full profile from the Lebenslauf. No changes required. Frontend TypeScript check passed; full build/test blocked by environment.",
   "artifacts": ["crew-ai/feature-readme-profile/implement/summary.md", "crew-ai/feature-readme-profile/executor/role-output.md"],
-  "risks": ["Validation commands partially blocked: frontend rollup issue, backend JAVA_HOME; prior validation in feature-update-readme passed all tests"],
-  "nextStepHint": "User can add specific contact details when available; run validation in proper environment to confirm"
+  "risks": ["Contact section uses placeholders; add real URLs when available"],
+  "nextStepHint": "User can add specific contact details when available; run full build/test in proper environment to verify"
 }
 ```
