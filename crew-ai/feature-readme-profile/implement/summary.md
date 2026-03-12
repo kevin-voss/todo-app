@@ -21,8 +21,9 @@ The README profile section includes:
 ## Validation
 
 - **Frontend TypeScript:** `npx tsc --noEmit` — **PASSED**
-- **Frontend build/test:** Failed — `@rollup/rollup-linux-arm64-gnu` optional dependency not found (npm bug on linux-arm64)
-- **Backend compile/test:** Failed — JAVA_HOME not configured
+- **Frontend build:** Failed — `@rollup/rollup-linux-arm64-gnu` optional dependency not found (npm bug on linux-arm64)
+- **Frontend test:** Failed — Same Rollup error (Vitest depends on Rollup)
+- **Backend test:** Failed — JAVA_HOME not configured
 - **Previous validation** (feature-update-readme): Frontend 23 tests passed, Backend 36 tests passed
 
 ## Notes

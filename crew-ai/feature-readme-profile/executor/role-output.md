@@ -2,7 +2,7 @@
 
 ## Summary
 
-The README already contains Kevin Voß's full profile from the Lebenslauf (January 2026). The profile section was updated in a previous crew-ai task (feature-update-readme) and includes all professional information: header, summary, core skills (AI & GenAI, Frontend, Backend, Cloud & DevOps), experience at Adesso SE and Micromerce GmbH, education, AWS certifications, languages, work preferences, and contact placeholders. No changes to the README were required. Frontend TypeScript check (`tsc --noEmit`) passed. Full frontend/backend build and test could not run due to environment constraints (rollup optional dependency on linux-arm64, JAVA_HOME not configured).
+The README already contains Kevin Voß's full profile from the Lebenslauf (January 2026). The profile section was updated in a previous crew-ai task (feature-update-readme) and includes all professional information: header, summary, core skills (AI & GenAI, Frontend, Backend, Cloud & DevOps), experience at Adesso SE and Micromerce GmbH, education, AWS certifications, languages, work preferences, and contact placeholders. No changes to the README were required. Frontend TypeScript check (`tsc --noEmit`) passed. Full frontend build/test failed due to Rollup optional dependency on linux-arm64; backend test failed due to JAVA_HOME not configured.
 
 ## Questions for User
 
@@ -18,7 +18,7 @@ The README already contains Kevin Voß's full profile from the Lebenslauf (Janua
 
 Score: 90
 
-Reason: The README profile section is complete and matches the lebenslauf data described in prior crew-ai tasks. No source lebenslauf file exists in the workspace to verify against; confidence is based on consistency with feature-update-readme documentation. Full build/test validation blocked by environment.
+Reason: The README profile section is complete and matches the lebenslauf data described in prior crew-ai tasks. No source lebenslauf file exists in the workspace to verify against; confidence is based on consistency with feature-update-readme documentation. Full build/test validation blocked by environment constraints.
 
 ## Recommendations
 
