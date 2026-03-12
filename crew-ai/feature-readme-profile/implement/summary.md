@@ -20,8 +20,9 @@ The README profile section includes:
 
 ## Validation
 
-- **Frontend build/test:** Could not run in current environment (rollup optional dependency issue on linux-arm64)
-- **Backend build/test:** Could not run in current environment (JAVA_HOME not configured)
+- **Frontend TypeScript:** `npx tsc --noEmit` — **PASSED**
+- **Frontend build/test:** Failed — `@rollup/rollup-linux-arm64-gnu` optional dependency not found (npm bug on linux-arm64)
+- **Backend compile/test:** Failed — JAVA_HOME not configured
 - **Previous validation** (feature-update-readme): Frontend 23 tests passed, Backend 36 tests passed
 
 ## Notes

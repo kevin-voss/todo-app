@@ -25,7 +25,7 @@ Add the info from lebenslauf to the README and replace the data inside the readm
 ## Build System
 
 - **Frontend:** `package.json` → `npm run build` (tsc && vite build), `npm run test` (vitest run)
-- **Backend:** `pom.xml` → `./mvnw compile`, `./mvnw test`
+- **Backend:** `pom.xml` → `./mvnw test`
 
 ## Build Results
 
@@ -40,6 +40,12 @@ Add the info from lebenslauf to the README and replace the data inside the readm
 |-----------|---------|--------|
 | Frontend | `cd frontend && npm run test` | **FAILED** — Same rollup optional dependency issue as build |
 | Backend | `cd backend && ./mvnw test` | **FAILED** — JAVA_HOME not configured |
+
+## Additional Checks
+
+| Check | Command | Result |
+|-------|---------|--------|
+| Frontend TypeScript | `cd frontend && npx tsc --noEmit` | **PASSED** |
 
 ## Environment Notes
 
