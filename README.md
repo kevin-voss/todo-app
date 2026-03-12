@@ -6,73 +6,73 @@ A minimal todo application with React (frontend), Java Spring Boot (backend), an
 
 ## Profile
 
-**Aria Abbaspour**
+**Kevin Voß, B.Sc.**  
+Senior Fullstack GenAI Software Engineer · Hannover, Germany
 
 ### Summary
 
-Internationales Informationsmanagement Bachelor-Absolvent mit Schwerpunkt auf Informationsmanagement, Prozessoptimierung und Datenqualität. Mehrjährige praktische Erfahrung in unterschiedlichen Arbeitsumgebungen mit ausgeprägtem Qualitätsbewusstsein und Detailgenauigkeit. Versiert im Umgang mit digitalen Systemen und Dokumentationstools. Selbstständige, lösungsorientierte Arbeitsweise mit nachweislicher Erfahrung in der Remote-Arbeit.
+Senior Full-Stack and GenAI Engineer with 4.5+ years of professional experience delivering scalable cloud-native and AI-powered systems. Leveraging React, TypeScript, Java, Spring Boot, and AWS, I build and maintain reliable platforms while guiding technical decisions across teams. Experienced in system design, infrastructure optimization, and implementing RAG and LLM-based solutions to streamline workflows and accelerate delivery. Skilled in facilitating collaboration between stakeholders, freelancers, and engineers, improving productivity, reducing cloud costs by up to 90%, and supporting faster feature development. Passionate about combining hands-on engineering with innovative AI tooling to deliver practical, high-impact solutions.
+
+### Core Skills
+
+- **AI & GenAI:** LLMs (OpenAI, Claude, Cursor, AI IDEs), RAG (Spring AI), Python, Prompt Engineering, Vector Databases (Qdrant), AI Agents & Sub-Agents, AI Tools/Skills/Rules
+- **Frontend:** React, Next.js, TypeScript, Angular, Tailwind CSS, Web Components, Microfrontends
+- **Backend:** Java, Kotlin, Spring Boot, Spring AI, Microservices, Node.js, REST APIs
+- **Cloud & DevOps:** AWS, Docker, CI/CD, CDK, Terraform, IaC
+- **Methods & Tools:** Agile/Scrum, TDD, System Design, Event-Driven Architecture, Git, Jest, Playwright, Mentoring
 
 ### Experience
 
-#### Aug 2024 – Jan 2026 · Werkstudent Betriebswirtschaft & Datenanalyse  
-**EVI Energieversorgung Hildesheim GmbH & Co. KG · Hildesheim**
+#### Oct 2025 – Present · Software Engineer  
+**Adesso SE · Hannover (Hybrid)**
 
-- Unterstützung mehrerer Fachabteilungen (Fernwärme, Energielogistik, Finanz- und Anlagenwesen, Controlling, Personalmanagement) im operativen Tagesgeschäft
-- Analyse, Aufbereitung und Pflege von Daten zur Unterstützung betriebswirtschaftlicher, energiewirtschaftlicher und personalbezogener Prozesse
-- Strukturierte Aufbereitung von Kennzahlen sowie Erstellung von Auswertungen, Übersichten und Reportings
-- Pflege und Verwaltung von Informationen in internen IT-Systemen sowie sicherer Umgang mit MS Excel
-- Unterstützung bei abrechnungs-, anlagen- und personalbezogenen Tätigkeiten
-- Mitwirkung bei der Analyse, Optimierung und Weiterentwicklung interner Prozesse und Arbeitsabläufe
-- Selbstständige Übernahme von Teilaufgaben nach entsprechender Einarbeitung
-- Abteilungsübergreifende Zusammenarbeit mit verschiedenen Ansprechpartnern
+- **GS1 Rule Transformer (GS1):** Designed and implemented a 6-stage GenAI pipeline (Python + OpenAI API) that converts complex German business rules into validated JSON schemas, reducing manual processing time by 95% (30–60 min → <1 min) while eliminating errors
+- **WebSocket Load Balancer POC (Mercedes Benz):** Architected a high-availability WebSocket infrastructure for Mercedes-Benz shop-floor systems using Apache HTTP Server and OpenLiberty, improving real-time reliability and reducing connection failures
+- **RAG Validator (Siemens AG):** Developed a modular platform to evaluate RAG workflows, ensuring repeatable validation. The system verifies model accuracy and provides suggestions for optimizing file structures, enabling safe and generic use of chatbots across diverse business requirements
+- **Tech Stack:** Java, Python, Angular, TypeScript, Apache HTTP Server, OpenAI API, WebSockets, Docker
 
-#### Okt 2022 – Dez 2023 · Werkstudent Buchhaltung & Finanzwesen  
-**AMEOS Krankenhausgesellschaft Niedersachsen mbH · Hildesheim**
+#### Dec 2021 – Sep 2025 · Mid–Senior Software Engineer  
+**Micromerce GmbH · Hamburg (Remote)**
 
-- Unterstützung der Buchhaltung im operativen Tagesgeschäft
-- Mitarbeit bei der Erfassung, Prüfung und Verbuchung von Rechnungen
-- Unterstützung bei der Kontierung und Zuordnung von Geschäftsvorfällen
-- Pflege und Aktualisierung von Finanz- und Buchhaltungsdaten in internen Systemen
-- Unterstützung bei Monats- und Jahresabschlussvorbereitungen
-- Erstellung und Aufbereitung von Übersichten, Listen und Auswertungen
-- Bearbeitung administrativer Aufgaben im Finanzwesen
-- Zusammenarbeit mit internen Ansprechpartnern aus Verwaltung und Controlling
+- **End-to-End Contribution:** Directed the technical evolution of the company's core CMS within a 4-person engineering team, covering frontend, backend, and AWS infrastructure. Served as the primary interface between stakeholders, freelancers, customer developers, and engineers, translating requirements into architecture decisions, planning stories, and coordinating complex data migrations
+- **Frontend Architecture:** Designed a modular microfrontend setup with React and Next.js that enabled parallel feature work and reduced cross-team dependencies. Delivery speed increased by 40% while code quality improved through structured reviews, automated linting, and consistent testing practices
+- **Backend Development:** Developed scalable microservices using Java, Kotlin, and Spring Boot and implemented critical platform capabilities such as resumable uploads, dynamic form builders, LexoRank-based ordering, and automated backup processes to ensure reliability and data integrity across the system
+- **Cloud & DevOps:** Leveraging AWS CDK and CloudFormation, refined DynamoDB indexes and access patterns, optimized EC2 instance sizing based on real usage metrics, and introduced CloudWatch-driven auto scaling. These changes reduced infrastructure costs by up to 90% and stabilized performance under varying load. CI/CD pipelines and automated tests shortened deployment cycles by 50%
+- **AI & Automation:** Boosted development productivity by up to 50% through the integration of state-of-the-art AI tools (GitHub Copilot, Cursor AI, Claude). Built internal RAG-based GenAI services and leveraged AI to generate comprehensive technical documentation and visualizations, streamlining knowledge transfer
+- **Leadership:** Guided 2 junior engineers and 3 working students through mentoring and code reviews, onboarded freelancers and external customer developers, and facilitated technical discussions and knowledge-sharing sessions to maintain consistent engineering standards across the team
 
 ### Education
 
-#### Okt 2019 – Dez 2025 · Bachelor of Arts (B.A.) Internationales Informationsmanagement  
-**Universität Hildesheim · Hildesheim**
+#### Apr 2019 – Mar 2023 · Bachelor of Science (B.Sc.) Business Informatics  
+**University of Hildesheim · Hildesheim**
 
-- Interdisziplinäres Studium mit Schwerpunkt auf Betriebswirtschaft, Informations- und Datenmanagement
-- Vermittlung von Datenanalyse, Controlling und Prozessoptimierung
-- Erfahrung im Umgang mit digitalen Informationssystemen und Tools
-- Schulung in interkultureller Kommunikation und internationaler Zusammenarbeit
-- Vorbereitung auf die Unterstützung informationsbasierter Entscheidungsprozesse in Unternehmen
+#### Oct 2018 – Mar 2019 · Computer Science  
+**Leibniz University Hannover (LUH) · Hannover**
 
-#### Aug 2015 – Sep 2018 · Fachhochschulreife (BWL, VWL, Wirtschaftswissenschaften)  
-**Friedrich-List-Schule · Hildesheim**
+#### Sep 2018 · Abitur  
+**Werner von Siemens Schule Hildesheim** · Focus: C++, PHP, SQL, Robotics
 
-### Skills
+### Certifications
 
-- **Datenanalyse & Reporting (fortgeschritten):** MS Excel (Pivot, Power Query), Power BI, SQL
-- **Controlling & Finanzwesen (fortgeschritten):** SAP FI/CO, DATEV, Lexware
-- **Prozessoptimierung (fortgeschritten):** Analyse & Weiterentwicklung interner Abläufe, SharePoint, Confluence
-- **Projekt- & abteilungsübergreifende Zusammenarbeit (sehr gut):** MS Teams, Outlook, Trello, Jira
-- **Digitale Informationssysteme & MS Office (sehr gut):** Excel, Access, SAP IS-U
-- **Kundenberatung & Servicekompetenz (sehr gut):** Beratung, Vertragsabwicklung, Kommunikation
-- **Weitere:** SEA & SEO
+- **AWS Certified Developer – Associate** (Expires: Nov 2028)
+- **AWS Certified Cloud Practitioner** (Expires: Oct 2028)
 
 ### Languages
 
-- **Deutsch:** Muttersprache
-- **Englisch:** Fließend
+- **German:** Native
+- **English:** Fluent
+
+### Additional Information
+
+- **Work Preferences:** Prefer remote work (open to hybrid). Focused on small companies and startups with a hands-on mentality and fast delivery cycles. Highly adaptable, quickly picking up new skills
+- **Interests:** Programming, Cooking, Gym, Piano, Gaming, Concerts, Painting
 
 ### Contact
 
-- **Email:** ariaabbaspour1998@gmail.com
-- **Phone:** 017666602639
-- **LinkedIn:** [Profil hinterlegen]
-- **Location:** 31134 Hildesheim, Deutschland
+- **Email:** [see LinkedIn/Portfolio]
+- **LinkedIn:** [see Portfolio]
+- **Portfolio:** [see LinkedIn]
+- **Location:** Hannover, Germany
 
 ---
 
