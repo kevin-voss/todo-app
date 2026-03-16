@@ -1,0 +1,54 @@
+---
+description: "Spring Boot patterns: JPA, REST, validation"
+globs: ["**/*.java", "backend/**/*"]
+alwaysApply: false
+---
+# Spring Boot Patterns
+
+> Project-specific patterns for the Todo backend.
+
+## Entity (JPA)
+
+```java
+@Entity
+@Table(name = "todos")
+public class Todo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String title;
+    private boolean completed;
+    // getters, setters, constructors
+}
+```
+
+## Repository
+
+Use `JpaRepository` or `CrudRepository`:
+
+```java
+public interface TodoRepository extends JpaRepository<Todo, Long> {}
+```
+
+## REST Controller
+
+- Use `@RestController` and `@RequestMapping("/api/todos")`
+- Return `ResponseEntity` for proper status codes (201 Created, 204 No Content, 404 Not Found)
+- Validate input at boundaries (e.g., `@Valid` with DTOs, or manual checks for empty title)
+
+## Validation
+
+- Reject empty or missing `title` on POST with `400 Bad Request`
+- Return `404 Not Found` for PATCH/DELETE on non-existent id
+- PATCH: accept partial payload; only update provided fields
+
+## Response Codes
+
+| Scenario | Status |
+|----------|--------|
+| GET list | 200 OK |
+| POST create | 201 Created |
+| PATCH update | 200 OK |
+| PATCH/DELETE not found | 404 Not Found |
+| DELETE success | 204 No Content |
+| Invalid POST (empty title) | 400 Bad Request |

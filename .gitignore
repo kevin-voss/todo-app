@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+target/
+
+# Build outputs
+dist/
+build/
+
+# IDE / editor
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AI metadata (defensive)
+crew-ai/
+validate/
+
+# Logs
+*.log
+npm-debug.log*
