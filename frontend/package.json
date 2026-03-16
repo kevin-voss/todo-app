@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "vitest run",
+    "test": "NODE_ENV=development vitest run",
     "test:watch": "vitest"
   },
   "dependencies": {
