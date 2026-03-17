@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     getTodos()
-      .then(setTodos)
+      .then((data) => setTodos(Array.isArray(data) ? data : []))
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
   }, []);

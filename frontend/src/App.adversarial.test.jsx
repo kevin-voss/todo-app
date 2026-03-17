@@ -57,19 +57,14 @@ describe('App - adversarial', () => {
     });
   });
 
-  it('handles non-array response from getTodos - documents crash when backend returns non-array', async () => {
+  it('handles non-array response from getTodos without crashing', async () => {
     global.fetch = vi.fn().mockResolvedValue({
       ok: true,
       json: () => Promise.resolve({ error: 'unexpected' }),
     });
-    render(
-      <TestErrorBoundary>
-        <App />
-      </TestErrorBoundary>
-    );
-    // BUG: When backend returns non-array, TodoList calls todos.map() and crashes (todos.map is not a function)
-    await waitFor(() => expect(screen.getByTestId('error-boundary')).toBeInTheDocument());
-    expect(screen.getByText('App crashed')).toBeInTheDocument();
+    render(<App />);
+    await waitFor(() => expect(screen.getByText('Todo App')).toBeInTheDocument());
+    expect(screen.getByText(/no todos|add your first/i)).toBeInTheDocument();
   });
 
   it('handles todo with missing title field without crashing', async () => {
