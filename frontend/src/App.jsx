@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { getTodos, createTodo, updateTodo, deleteTodo } from './api/todos';
 
+/**
+ * Main Todo App component. Renders the todo list UI with add, edit, toggle, and delete.
+ * Fetches todos from the backend on mount via getTodos().
+ */
 function App() {
   const [todos, setTodos] = useState([]);
   const [newTitle, setNewTitle] = useState('');

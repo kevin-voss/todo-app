@@ -52,9 +52,11 @@ Frontend runs at `http://localhost:5173` (Vite default). Ensure the backend is r
 │   └── index.html
 ├── backend/           # Spring Boot app
 │   └── src/main/java/com/todo/
+│       ├── config/    # CORS, etc.
 │       ├── controller/
 │       ├── entity/
-│       └── repository/
+│       ├── repository/
+│       └── service/
 └── CLAUDE.md          # AI/codebase guide
 ```
 
