@@ -47,12 +47,13 @@ Frontend runs at `http://localhost:5173` (Vite default). Ensure the backend is r
 ├── frontend/          # React + Vite app
 │   ├── src/
 │   │   ├── api/       # API client (todos.js)
+│   │   ├── components/  # AddTodoForm, TodoList, TodoItem
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   └── index.html
 ├── backend/           # Spring Boot app
 │   └── src/main/java/com/todo/
-│       ├── config/    # CORS, etc.
+│       ├── config/    # CORS (WebConfig)
 │       ├── controller/
 │       ├── entity/
 │       ├── repository/
@@ -81,4 +82,4 @@ Todo shape: `{ id, title, completed }`.
 
 - [CLAUDE.md](CLAUDE.md) — Codebase guide for AI tools
 - [AGENTS.md](AGENTS.md) — Agent workflow and conventions
-- [docs/](docs/) — Architecture and API details
+- [docs/](docs/) — [Architecture](docs/architecture.md), [API reference](docs/api.md), [Contributing](docs/contributing.md)

@@ -19,8 +19,18 @@
 
 ## Key Components
 
+### Backend
+
 - **Todo** (entity): `id`, `title`, `completed`
 - **TodoController**: REST endpoints at `/api/todos`
 - **TodoService**: Business logic layer (validation, CRUD orchestration)
 - **TodoRepository**: `JpaRepository<Todo, Long>`
+- **WebConfig**: CORS for frontend origins (localhost:5173, localhost:3000)
+
+### Frontend
+
 - **todos.js**: `getTodos`, `createTodo`, `updateTodo`, `deleteTodo`
+- **App.jsx**: Main component; fetches todos on mount, orchestrates handlers
+- **AddTodoForm**: Form to create a new todo
+- **TodoList**: Renders list of todos; empty state when none
+- **TodoItem**: Single todo row (checkbox, title, edit, delete; inline edit on Enter)
