@@ -10,7 +10,7 @@ const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8080';
  * @returns {Promise<Array<{id: number, title: string, completed: boolean}>>}
  */
 export async function getTodos() {
-  const res = await fetch(`${API_BASE}/api/todos`);
+  const res = await fetch(`${API_BASE}/api/todos`, { method: 'GET' });
   if (!res.ok) throw new Error('Failed to fetch todos');
   return res.json();
 }

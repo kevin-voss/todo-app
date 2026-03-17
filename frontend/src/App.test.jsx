@@ -20,7 +20,7 @@ describe('App', () => {
     render(<App />);
 
     await waitFor(() => {
-      expect(fetch).toHaveBeenCalledWith(expect.stringContaining('/api/todos'));
+      expect(fetch).toHaveBeenCalledWith(expect.stringContaining('/api/todos'), expect.anything());
     });
   });
 

@@ -13,12 +13,14 @@
 
 1. **Frontend** (`App.jsx`) loads todos on mount via `getTodos()` from `src/api/todos.js`.
 2. **API client** (`todos.js`) calls `http://localhost:8080/api/todos` (or `VITE_API_URL`).
-3. **Backend** (`TodoController`) handles CRUD and delegates to `TodoRepository`.
-4. **Repository** persists to H2 via Spring Data JPA.
+3. **Backend** (`TodoController`) handles HTTP and delegates to `TodoService`.
+4. **TodoService** applies business logic (validation, etc.) and delegates to `TodoRepository`.
+5. **TodoRepository** persists to H2 via Spring Data JPA.
 
 ## Key Components
 
 - **Todo** (entity): `id`, `title`, `completed`
 - **TodoController**: REST endpoints at `/api/todos`
+- **TodoService**: Business logic layer (validation, CRUD orchestration)
 - **TodoRepository**: `JpaRepository<Todo, Long>`
 - **todos.js**: `getTodos`, `createTodo`, `updateTodo`, `deleteTodo`
