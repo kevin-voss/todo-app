@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+frontend/dist/
+backend/target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# ECC / AI
+crew-ai/
+validate/
