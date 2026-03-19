@@ -2,6 +2,8 @@
 
 A full-stack todo application with a **React** (Vite) frontend, **Java Spring Boot** backend, and **H2** in-memory database. Supports create, read, update, delete, and toggle-completion of todos.
 
+Kevin ist ein Dussel!
+
 ## About the Author
 
 **Kevin Voß, B.Sc.** — Senior Fullstack GenAI Software Engineer | Hannover, Germany
