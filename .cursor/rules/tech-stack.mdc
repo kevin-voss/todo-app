@@ -1,0 +1,31 @@
+---
+description: "Todo app tech stack: React + Vite frontend, Spring Boot backend, H2"
+globs: []
+alwaysApply: true
+---
+# Tech Stack
+
+## Overview
+
+Full-stack todo application: **React** (Vite) frontend, **Java Spring Boot** backend, **H2** in-memory database. Monorepo layout: `frontend/` and `backend/`.
+
+## Commands
+
+| Action | Command |
+|--------|---------|
+| Backend run | `cd backend && mvn spring-boot:run` |
+| Backend test | `cd backend && mvn test` |
+| Frontend dev | `cd frontend && npm run dev` |
+| Frontend build | `cd frontend && npm run build` |
+| Frontend test | `cd frontend && npm run test` |
+
+## Key Types
+
+- **Todo**: `{ id: number, title: string, completed: boolean }`
+- **API base URL**: `http://localhost:8080` (dev) or via `VITE_API_URL`
+
+## Rules Reference
+
+- `.cursor/rules/` — Cursor rules (common + TypeScript/JS + Java)
+- **Frontend**: JS/JSX; TypeScript rules apply via globs
+- **Backend**: Java; use `java-coding-style.md` and `java-testing.md`

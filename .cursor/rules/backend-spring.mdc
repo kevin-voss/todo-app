@@ -1,0 +1,33 @@
+---
+description: "Spring Boot backend: REST API, JPA, H2"
+globs: ["backend/**/*.java"]
+alwaysApply: false
+---
+# Backend — Spring Boot
+
+## Stack
+
+- Spring Boot 3.2.5, Java 17
+- Spring Data JPA, H2 in-memory
+
+## REST API
+
+- Base path: `/api/todos`
+- CRUD: GET list, POST create, GET/PUT/DELETE by id
+- Todo shape: `{ id, title, completed }`
+
+## Structure
+
+```
+backend/src/main/java/com/todo/
+├── config/      # CORS (WebConfig)
+├── controller/
+├── entity/
+├── repository/
+└── service/
+```
+
+## Testing
+
+- `@SpringBootTest`, `@AutoConfigureMockMvc`, `@ActiveProfiles("test")`
+- Run: `cd backend && mvn test`

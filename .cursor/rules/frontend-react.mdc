@@ -1,0 +1,33 @@
+---
+description: "React + Vite frontend: API client, components, Vitest"
+globs: ["frontend/**/*.js", "frontend/**/*.jsx"]
+alwaysApply: false
+---
+# Frontend — React + Vite
+
+## Stack
+
+- React 18, Vite 6, Vitest
+- API client in `src/api/todos.js`
+- Entry: `main.jsx` → `App.jsx`
+
+## Structure
+
+```
+frontend/
+├── src/
+│   ├── api/         # todos.js
+│   ├── components/  # AddTodoForm, TodoList, TodoItem
+│   ├── App.jsx
+│   └── main.jsx
+└── index.html
+```
+
+## API Client
+
+Uses `fetch` to `/api/todos`. Base URL from `import.meta.env.VITE_API_URL` or `http://localhost:8080`.
+
+## Testing
+
+- Vitest with `@testing-library/react`, `jsdom`
+- Run: `cd frontend && npm run test`
