@@ -6,6 +6,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
+    environmentMatchGlobs: [['**/readme-resume*.test.js', 'node']],
     setupFiles: './src/test/setup.js',
   },
 });

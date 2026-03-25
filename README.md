@@ -2,15 +2,13 @@
 
 A full-stack todo application with a **React** (Vite) frontend, **Java Spring Boot** backend, and **H2** in-memory database. Supports create, read, update, delete, and toggle-completion of todos.
 
-Kevin ist ein Dussel!
-
 ## About the Author
 
 **Kevin Voß, B.Sc.** — Senior Fullstack GenAI Software Engineer | Hannover, Germany
 
 ### Professional Summary
 
-Senior Full-Stack and GenAI Engineer with 4.5+ years of professional experience delivering scalable cloud-native and AI-powered systems. Leveraging React, TypeScript, Java, Spring Boot, and AWS to build and maintain reliable platforms while guiding technical decisions across teams. Experienced in system design, infrastructure optimization, and implementing RAG and LLM-based solutions to streamline workflows and accelerate delivery. Skilled in facilitating collaboration between stakeholders, freelancers, and engineers—improving productivity, reducing cloud costs by up to 90%, and supporting faster feature development.
+Senior Full-Stack and GenAI Engineer with 4.5+ years of professional experience delivering scalable cloud-native and AI-powered systems. Leveraging React, TypeScript, Java, Spring Boot, and AWS, I build and maintain reliable platforms while guiding technical decisions across teams. Experienced in system design, infrastructure optimization, and implementing RAG and LLM-based solutions to streamline workflows and accelerate delivery. Skilled in facilitating collaboration between stakeholders, freelancers, and engineers, improving productivity, reducing cloud costs by up to 90%, and supporting faster feature development. Passionate about combining hands-on engineering with innovative AI tooling to deliver practical, high-impact solutions.
 
 ### Core Skills
 
@@ -45,7 +43,7 @@ Senior Full-Stack and GenAI Engineer with 4.5+ years of professional experience 
 ### Additional
 
 - **Languages:** German (Native), English (Fluent)
-- **Work Preferences:** Remote (open to hybrid). Small companies and startups with hands-on mentality and fast delivery cycles.
+- **Work Preferences:** Prefer remote work (open to hybrid). Focused on small companies and startups with a hands-on mentality and fast delivery cycles. Highly adaptable, quickly picking up new skills.
 - **Interests:** Programming, Cooking, Gym, Piano, Gaming, Concerts, Painting
 
 ## Prerequisites
