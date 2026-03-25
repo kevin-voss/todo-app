@@ -27,6 +27,8 @@ Full-stack todo app: **React** (Vite) frontend, **Java Spring Boot** backend, **
 
 ## Rules
 
+- **Cursor-first config**: `.cursor/rules/`, `.cursor/hooks.json`, `.cursor/hooks/`, `.cursor/skills/` — primary automation for this repo.
+- **Cross-tool note**: root `CLAUDE.md` mirrors stack and commands for other assistants; keep substantive changes aligned with this file and `.cursor/rules/` when both are maintained.
 - `.cursor/rules/` — Cursor rules (common + TypeScript/JS + Java).
 - **Cursor layout**: `tech-stack.mdc` is always on; `frontend-react.mdc` and `backend-spring.mdc` apply under `frontend/**` and `backend/**` respectively (see each file’s `globs`). Shared `common-*.md` / `typescript-*.md` / Java rules apply per their frontmatter.
 - **Hooks**: `.cursor/hooks.json` — session, shell, and MCP hook commands; scripts live in `.cursor/hooks/`.

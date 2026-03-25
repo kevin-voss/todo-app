@@ -24,6 +24,11 @@ Full-stack todo application: **React** (Vite) frontend, **Java Spring Boot** bac
 - **Todo**: `{ id: number, title: string, completed: boolean }`
 - **API base URL**: `http://localhost:8080` (dev) or via `VITE_API_URL`
 
+## Monorepo conventions
+
+- Use **npm** for frontend script invocations in docs and agent commands (`cd frontend && npm run …`); other lockfiles may exist—do not switch documented commands without updating `AGENTS.md` and this file.
+- Optional **skills** (long-form content, slides, investor docs, etc.): `.cursor/skills/` — open the matching `SKILL.md` when the user’s task fits its description.
+
 ## Rules Reference
 
 - **Canonical agent overview**: root `AGENTS.md` (architecture, conventions, validation checklist)

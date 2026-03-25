@@ -7,7 +7,8 @@ alwaysApply: false
 
 ## Stack
 
-- React 18, Vite 6, Vitest
+- React 18, Vite 6, Vitest (`todo-frontend` in `frontend/package.json`)
+- Run scripts with **npm** (same as `AGENTS.md` / `tech-stack.mdc`)
 - API client in `src/api/todos.js`
 - Entry: `main.jsx` → `App.jsx`
 
