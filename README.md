@@ -1,10 +1,12 @@
-# Todo App
+# Kevin Voß, B.Sc. — Senior Fullstack GenAI Software Engineer
+
+## Todo App
 
 A full-stack todo application with a **React** (Vite) frontend, **Java Spring Boot** backend, and **H2** in-memory database. Supports create, read, update, delete, and toggle-completion of todos.
 
 ## About the Author
 
-**Kevin Voß, B.Sc.** — Senior Fullstack GenAI Software Engineer | Hannover, Germany
+Hannover, Germany
 
 ### Professional Summary
 
