@@ -30,4 +30,5 @@ Uses `fetch` to `/api/todos`. Base URL from `import.meta.env.VITE_API_URL` or `h
 ## Testing
 
 - Vitest with `@testing-library/react`, `jsdom`
-- Run: `cd frontend && npm run test`
+- CI / once: `cd frontend && npm run test`
+- Local watch: `cd frontend && npm run test:watch`

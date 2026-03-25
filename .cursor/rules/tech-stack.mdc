@@ -7,7 +7,7 @@ alwaysApply: true
 
 ## Overview
 
-Full-stack todo application: **React** (Vite) frontend, **Java Spring Boot** backend, **H2** in-memory database. Monorepo layout: `frontend/` and `backend/`.
+Full-stack todo application: **React** (Vite) frontend, **Java Spring Boot** backend, **H2** in-memory database. Monorepo layout: `frontend/` and `backend/`. Run commands from repo root with `cd frontend` or `cd backend` as in the table below.
 
 ## Commands
 
@@ -26,6 +26,8 @@ Full-stack todo application: **React** (Vite) frontend, **Java Spring Boot** bac
 
 ## Rules Reference
 
-- `.cursor/rules/` — Cursor rules (common + TypeScript/JS + Java)
+- **Canonical agent overview**: root `AGENTS.md` (architecture, conventions, validation checklist)
+- `.cursor/rules/` — Cursor rules (common + TypeScript/JS + Java); this file is **always applied**; `frontend-react.mdc` and `backend-spring.mdc` are path-scoped
+- **Hooks**: `.cursor/hooks.json` wires lifecycle, shell, and MCP hooks (implementations in `.cursor/hooks/`)
 - **Frontend**: JS/JSX; TypeScript rules apply via globs
 - **Backend**: Java; use `java-coding-style.md` and `java-testing.md`

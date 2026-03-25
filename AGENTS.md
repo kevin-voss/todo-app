@@ -28,6 +28,9 @@ Full-stack todo app: **React** (Vite) frontend, **Java Spring Boot** backend, **
 ## Rules
 
 - `.cursor/rules/` — Cursor rules (common + TypeScript/JS + Java).
+- **Cursor layout**: `tech-stack.mdc` is always on; `frontend-react.mdc` and `backend-spring.mdc` apply under `frontend/**` and `backend/**` respectively (see each file’s `globs`). Shared `common-*.md` / `typescript-*.md` / Java rules apply per their frontmatter.
+- **Hooks**: `.cursor/hooks.json` — session, shell, and MCP hook commands; scripts live in `.cursor/hooks/`.
+- **Skills** (optional): `.cursor/skills/` — use a skill when the task matches its description (e.g. long-form writing, slides); not required for routine app work.
 - ECC base config: coding style, testing, git workflow, security, hooks.
 - **Frontend**: JS/JSX; TypeScript rules apply via globs.
 - **Backend**: Java; use `java-coding-style.md` and `java-testing.md`.
